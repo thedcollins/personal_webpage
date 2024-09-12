@@ -112,3 +112,9 @@ ul {
     gap: 5px;
   }
 }
+
+.half-line-break::after {
+  content: "";
+  display: block;
+  height: 0.5em; /* Adjust height as needed */
+}
