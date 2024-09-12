@@ -1,19 +1,19 @@
-// Sticky Header
-window.onscroll = function() {stickyHeader()};
+// script.js
 
-var header = document.querySelector("header");
-var sticky = header.offsetTop;
+document.addEventListener('DOMContentLoaded', function() {
+  const contactLink = document.getElementById('contact-link');
+  const contactSection = document.getElementById('contact');
 
-function stickyHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+  contactLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
 
-// Toggle Mobile Menu
-function toggleMenu() {
-  var menu = document.querySelector("nav ul");
-  menu.classList.toggle("show");
-}
+    // Toggle the 'show' class on the contact section
+    if (contactSection.classList.contains('hidden')) {
+      contactSection.classList.remove('hidden');
+      contactSection.classList.add('show');
+    } else {
+      contactSection.classList.remove('show');
+      contactSection.classList.add('hidden');
+    }
+  });
+});

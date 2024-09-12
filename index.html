@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dominik Collins - Resume</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
@@ -14,12 +15,15 @@
       </div>
       <nav>
         <ul class="menu">
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#career">Career History</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" id="contact-link">Contact</a>
+            <div class="dropdown-content">
+              <a href="mailto:thedominikcollins@gmail.com">Email</a>
+              <a href="tel:07539700039">Phone</a>
+              <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -128,14 +132,6 @@
           <li>Google IT Support Certificate - Google (2020)</li>
           <li>3D for Visual Effects - Escape Studios (2017)</li>
         </ul>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:thedominikcollins@gmail.com">thedominikcollins@gmail.com</a></p>
-        <p>Phone: 07539 700039</p>
-        <p>LinkedIn: <a href="#">LinkedIn Profile</a></p>
       </section>
     </main>
   </body>
